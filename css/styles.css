@@ -1,0 +1,109 @@
+body{
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1{
+  font-family: Fraunces;
+  line-height: 1;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.wrapper{
+  display: flex;
+  margin: 50px auto;
+  width: 600px;
+  height: 450px;
+  align-items: stretch;
+}
+
+.image-desktop{
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.product-info{
+  background-color: hsl(0, 0%, 100%);
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+    display: block;
+    width: 355px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .product-info{
+    padding-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .image-desktop{
+    display: none;
+  }
+
+  .image-mobile {
+    display: block;
+    width: 355px;
+    border-radius: 10px 10px 0 0;
+  }
+
+
+}
+
+
+
+.perfume{
+  letter-spacing: 4px;
+}
+
+.product-prices{
+  display: flex;
+  align-items: center;
+}
+
+.price{
+  color: hsl(158, 36%, 37%);
+}
+.prevPrice{
+  text-decoration: line-through;
+  margin-left: 15px;
+}
+
+.myButton {
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+  border: 0;
+	cursor:pointer;
+	color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-size: 14px;
+  padding: 10px 60px;
+  margin: auto;
+  display: block;
+}
+.myButton:hover {
+	background-color: hsl(180, 100%, 10%);
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.attribution{
+  text-align: center;
+}
